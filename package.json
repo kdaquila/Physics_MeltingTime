@@ -1,0 +1,25 @@
+{
+  "name": "Physics_MeltingTime",
+  "version": "1.0.0",
+  "description": "Exploration project for Semantic UI. This webpage can compute the time needed to warm-up and completely melt a block of metal.",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --open=./src --watch=./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdaquila/Physics_MeltingTime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdaquila/Physics_MeltingTime/issues"
+  },
+  "homepage": "https://github.com/kdaquila/Physics_MeltingTime#readme",
+  "dependencies": {
+    "foundation-sites": "^6.6.1",
+    "jquery": "^3.4.1",
+    "what-input": "^5.2.6"
+  }
+}
