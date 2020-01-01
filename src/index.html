@@ -6,15 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation Starter Template</title>
     <link rel="stylesheet" href="../node_modules/foundation-sites/dist/css/foundation.min.css">
+    <script src="./index.js"></script>
 </head>
 <body>
-    <h1>Hello, world!</h1>
-
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <h1>Melting Time</h1>
+            </div>
+            <div class="cell">
+                <h3>Question:</h3>
+                <p>How much time will elapse heating a metal block until it fully melts?</p>
+            </div>
+            <div class="cell">
+                <h3>Inputs:</h3>
+            </div>
+            <div class="cell medium-6">
+                <div class="input-group">
+                    <span class="input-group-label">Mass (kg)</span>
+                    <input class="input-group-field" id="mass" type="number" value="1" placeholder="Enter a number">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">Power (W)</span>
+                    <input class="input-group-field" id="power" type="number" value="1000" placeholder="Enter a number">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">Initial Temperature (C)</span>
+                    <input class="input-group-field" id="initialTemp" type="number" value="25" placeholder="Enter a number">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">Specific Heat (J/(kg C))</span>
+                    <select class="input-group-field" id="specificHeat">
+                        <option value="444">Iron: 444</option>
+                        <option value="900">Aluminum: 900</option>
+                        <option value="385">Copper: 385</option>
+                        <option value="129">Gold: 129</option>
+                        <option value="240">Silver: 240</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">Latent Heat (J/kg)</span>
+                    <select class="input-group-field" id="latentHeat">
+                        <option value="247000">Iron: 247000</option>
+                        <option value="397000">Aluminum: 397000</option>
+                        <option value="209000">Copper: 209000</option>
+                        <option value="63700">Gold: 63700</option>
+                        <option value="105000">Silver: 105000</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-label">Melting Temperature (C)</span>
+                    <select class="input-group-field" id="meltingTemp">
+                        <option value="1149">Iron: 1149</option>
+                        <option value="660">Aluminum: 660</option>
+                        <option value="1084">Copper: 1084</option>
+                        <option value="1063">Gold: 1063</option>
+                        <option value="961">Silver: 961</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell">
+                <button class="button" onclick="handleCompute()">Compute</button>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="cell">
+                <h3>Results:</h3>
+            </div>
+            <div class="cell medium-6">
+                <div class="input-group">
+                    <span class="input-group-label">Time (s)</span>
+                    <input class="input-group-field" id="meltingTime" type="number" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/what-input/dist/what-input.min.js"></script>
     <script src="../node_modules/foundation-sites/dist/js/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
 </body>
 </html>
