@@ -19,7 +19,7 @@
   "homepage": "https://github.com/kdaquila/Physics_MeltingTime#readme",
   "dependencies": {
     "foundation-sites": "^6.6.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "what-input": "^5.2.6"
   }
 }
